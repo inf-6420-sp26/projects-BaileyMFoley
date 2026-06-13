@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Research Report – Archival Administration Pathway</title>
+</head>
+
+<body>
+
+<header>
+    <h1>Research Report: Career Path – Archival Administration</h1>
+
+    <p>
+        The purpose of this report is to analyze the structure, semantics, and accessibility of the Wayne State University School of Information Sciences webpage titled Career Path: Archival Administration. This analysis examines how the page uses HTML5 semantic elements, heading hierarchy, lists, links, and accessibility best practices. It also evaluates the page using the WAVE accessibility tool and the W3C HTML Validator to assess compliance with modern web standards.
+    </p>
+<h2>School of Information Sciences: Archival administration</h2>
+    <p>
+        <strong>Selected Page URL:</strong><br>
+        <a href="https://sis.wayne.edu/mlis/pathway/archival-administration">
+            https://sis.wayne.edu/mlis/pathway/archival-administration
+        </a>
+    </p>
+
+    <p>
+        I selected this page because it represents the academic and professional pathway I am personally following within the MLIS program. The content is directly relevant to my goals, making it meaningful to analyze from both a technical and practical perspective. This page meets all required criteria for the assignment: it includes a clear header and footer, a navigation menu with multiple links, a main content area with descriptive text, several images, multiple lists, and at least three visible heading levels.
+    </p>
+</header>
+
+
+<main>
+
+<!-- SECTION I -->
+<section id="major sections">
+    <h2>Major Sections</h2>
+
+    <h3>Site Header</h3>
+    <figure>
+        <img src="images/Header.png" alt="Screenshot of the site header.">
+        <figcaption>Site header with Wayne State branding and navigation.</figcaption>
+    </figure>
+    <p>
+        The site header appears at the top of the page and contains the Wayne State University logo, institutional branding, and global navigation elements. This section should be marked up using the <code>&lt;header&gt;</code> element because it introduces the site and provides consistent identity information across the domain. The header also contains navigation links that help users orient themselves, which is a core function of a semantic header.
+    </p>
+
+    <h3>Main Navigation</h3>
+    <figure>
+        <img src="images/Main Nav.png" alt="Screenshot of the main navigation menu.">
+        <figcaption>Main navigation menu.</figcaption>
+    </figure>
+    <p>
+        The navigation bar includes multiple links such as “Degrees and Certificates,” “Master of Library and Information Science,” “Career Pathways,” and “Archival Administration” which are key areas of the School of Information Sciences website. This section should be marked up using the <code>&lt;nav&gt;</code> element because its primary purpose is to provide a structured set of navigational links that help users move through the site. The <code>&lt;nav&gt;</code> element is appropriate here because the links form a major navigation block rather than inline or contextual links.
+    </p>
+
+    <h3>Primary Content Area</h3>
+    <figure>
+        <img src="images/Main Content Area.png" alt="Screenshot of the main content area.">
+        <figcaption>Main content describing the archival administration pathway.</figcaption>
+    </figure>
+    <p>
+        The main content area contains the <code>&lt;h1&gt;</code> “Career Path: Archival Administration,” descriptive text about the pathway, course listings, and professional organization information. This section belongs inside the <code>&lt;main&gt;</code> element because it represents the central content of the page — the information users are primarily visiting to read. Within <code>&lt;main&gt;</code>, individual topics such as “Courses,” “Professional Organizations,” and “Career Opportunities” can be further grouped using <code>&lt;section&gt;</code> elements to improve structure and readability.
+    </p>
+
+    <h3>Page Footer</h3>
+    <figure>
+        <img src="images/Footer.png">
+        <figcaption>Site footer with institutional links.</figcaption>
+    </figure>
+    <p>
+        The footer appears at the bottom of the page and includes institutional contact information, links to university resources, and legal or administrative information. This section should be marked up using the <code>&lt;footer&gt;</code> element because it provides supporting information that applies to the entire site rather than the specific page. The footer helps users find additional resources and is a standard semantic container for closing site-wide content.
+    </p>
+</section>
+
+
+<!-- SECTION II -->
+<section id="heading-hierarchy">
+    <h2>Heading Hierarchy</h2>
+
+    <p>The page uses a clear and logical heading hierarchy:</p>
+
+    <ul>
+        <li><strong>H1:</strong> “Career path: Archival administration” — This is the main title of the page and represents the highest-level topic, so it should be marked as the single H1 heading.</li>
+        <li><strong>H2:</strong> “Courses” — This heading introduces a major section of the page that outlines the recommended coursework for the archival administration pathway. As a primary subsection under the page title, it should be an H2.</li>
+        <li><strong>H3:</strong> Individual course titles — Each course title functions as a subsection within the larger “Courses” section, so these should be marked as H3 headings to show they are nested under the H2.</li>
+        <li><strong>H2:</strong> “Professional Organizations” — This heading introduces another major thematic section of the page. Because it is parallel in importance to “Courses,” it should also be an H2.</li>
+        <li><strong>H3:</strong> Organization names — Each organization listed is a subtopic within the “Professional Organizations” section, so these should be H3 headings.</li>
+        <li><strong>H2:</strong> “Career Opportunities” — This heading introduces a new major section describing potential job paths. As a top-level section under the main page title, it should be an H2.</li>
+    </ul>
+
+    
+</section>
+
+
+<!-- SECTION III -->
+<section id="lists">
+    <h2>Lists</h2>
+
+    <h3>A. Main Navigation Menu</h3>
+    <figure>
+        <img src="images/Main Nav.png" alt="Screenshot of the navigation menu list.">
+        <figcaption>Navigation menu list.</figcaption>
+    </figure>
+    <p>
+        The main navigation menu at the top of the page should be marked up using an unordered list (<code>&lt;ul&gt;</code>). This is because the navigation links do not follow a numerical or sequential order; instead, they represent a set of equally important navigation options. Each list item contains a hyperlink, making this a list of linked items that help users move between major sections of the Wayne State website.
+    </p>
+
+    <h3>B. Courses List</h3>
+    <figure>
+        <img src="images/List 1.png" alt="Screenshot of the courses list.">
+        <figcaption>List of recommended courses.</figcaption>
+    </figure>
+    <p>
+        The list of recommended courses for the archival administration pathway should also be marked up using an unordered list (<code>&lt;ul&gt;</code>). The courses are not meant to be taken in a strict order, and the list is meant to group related items rather than present a sequence. Each list item contains plain text course titles, sometimes accompanied by short descriptions, making this a text based informational list rather than a list of links.
+    </p>
+
+    <h3>C. Professional Organizations</h3>
+    <figure>
+        <img src="images/List 2.png" alt="Screenshot of professional organizations list.">
+        <figcaption>List of professional organizations.</figcaption>
+    </figure>
+    <p>
+        The list of professional organizations should be marked up using an unordered list (<code>&lt;ul&gt;</code>)because the organizations are not ranked or ordered; they are simply grouped as relevant resources. Each list item contains a hyperlink to an external website, making this a mixed list of organization names and outbound links.
+    </p>
+</section>
+
+
+<!-- SECTION IV -->
+<section id="link-analysis">
+    <h2>Link Analysis</h2>
+
+<p>The Archival Administration pathway page contains a mix of internal and external links that help users navigate both the Wayne State University website and relevant professional resources. The following examples illustrate how these links function and whether they should open in the same tab or a new one.</p>
+
+    <h3>Internal Links</h3>
+<p>Internal links are those that keep the user within the wayne.edu domain. These links help users move between related pages without leaving the university’s website.</p>
+    <ul>
+        <li>“MLIS Program” — This link directs users to the main Master of Library and Information Science program page. It is an internal link because it remains within the wayne.edu domain.</li>
+        <li>Course description links — Some course titles link to detailed course descriptions hosted on the School of Information Sciences website. These are internal links because they point to pages within the same academic unit.</li>
+        <li>“Student Resources” — This link leads to a centralized resource page for current students. It is internal because it stays within the university’s website structure.</li>
+    </ul>
+    <p>Internal links should open in the same tab.</p>
+
+    <h3>External Links</h3>
+<p>External links take users outside the Wayne State domain to professional organizations or industry resources.</p>
+  <ul>
+        <li>Society of American Archivists (SAA)- This link directs users to the national professional organization for archivists. Because it leaves the university website, it is an external link.</li>
+        <li>Midwest Archives Conference (MAC)- This link leads to a regional archival organization’s website, making it an external link.</li>
+        <li>American Library Association (ALA)- This link points to the ALA website, which is outside the Wayne State domain.</li>
+    </ul>
+    <p>External links should open in a new tab to prevent users from losing their place.</p>
+
+    <p>The page does not use visual indicators to distinguish external links.</p>
+</section>
+
+<!-- SECTION V -->
+<section id="accessibility">
+    <h2>Accessibility Review (WAVE)</h2>
+<p>I evaluated the Archival Administration pathway page using the WAVE Web Accessibility Evaluation Tool. The report showed 0 errors, meaning no accessibility violations were automatically detected. The page received an AIM Score of 9.8 out of 10, indicating strong overall accessibility. WAVE also reported 7 alerts, which are not errors but potential issues worth reviewing.</p>
+
+    <figure>
+        <img src="images/wave.webaim Alerts 1.png" width="800" alt="Screenshot of W3C validator message.">
+        <figcaption>WAVE result.</figcaption>
+    </figure>
+
+<a href="https://wave.webaim.org/report#/https://sis.wayne.edu/mlis/pathway/archival-administration">
+            https://wave.webaim.org/report#/https://sis.wayne.edu/mlis/pathway/archival-administration
+        </a>
+<h3>Most Significant Issues Identified</h3>
+<ol>
+	<li><strong>Redundant alternative text (3 instances):</strong> WAVE flagged several images where the alt text repeats information already conveyed by nearby text. Redundant alt text can create unnecessary repetition for screen reader users, reducing clarity and efficiency.</li>
+        <li><strong>Long alternative text (2 instances) :</strong> A few images contain alt text that is overly long or descriptive. While alt text is important, excessively long descriptions can overwhelm users relying on assistive technology.</li>
+</ol>  
+
+<h3>Alt Text Evaluation</h3> 
+<p>According to the WAVE “Details” panel, the page does include alt text for all images, and none of the images are missing descriptions. The issues relate to quality, not absence — meaning the page is accessible but could be improved with more concise alt text.</p>
+
+<h3>Actionable Improvement</h3> 
+<p>A specific improvement would be to revise the alt text to remove redundancy and shorten overly long descriptions. For example, instead of repeating the full text of a linked heading or paragraph, the alt text could briefly summarize the image’s purpose (e.g., “SIS program banner” rather than a full sentence).</p>
+
+</section>
+
+<!-- SECTION VI -->
+<section id="validation">
+    <h2>HTML Validation (W3C)</h2>
+
+<a href="https://validator.w3.org/check?uri=https://sis.wayne.edu/mlis/pathway/archival-administration&charset=(detect+automatically)&doctype=Inline&group=0">
+            https://validator.w3.org/check?uri=https://sis.wayne.edu/mlis/pathway/archival-administration&charset=(detect+automatically)&doctype=Inline&group=0
+        </a>
+
+    <p>
+        I evaluated the Archival Administration pathway page using the W3C HTML Validator. When I entered the page URL and attempted to run the validation, the tool returned the message “Sorry! This document cannot be checked.” This message indicates that the validator was unable to retrieve the page’s HTML source due to server restrictions. Many university websites, including Wayne State’s, block automated tools from accessing their pages for security reasons.
+    </p>
+<figure>
+        <img src="images/validator.w3.org.png" width="800" alt="Screenshot of W3C validator message.">
+        <figcaption>W3C validator result.</figcaption>
+    </figure>
+
+    <p>
+        Because the validator could not access the page, no errors or warnings were reported, and the tool was unable to analyze the underlying HTML. This does not mean the page is error free; it simply means the validator was prevented from loading the content.
+    </p>
+
+<h3>Actionable Improvement</h3>
+<p>To validate the page manually, the site owner (or a developer with access) could download the HTML file and upload it directly to the W3C Validator. This would bypass the server restriction and allow a full analysis of the page’s markup.</p>
+
+</section>
+
+
+<!-- SECTION VII -->
+<section id="summary">
+    <h2>Summary</h2>
+
+    <p>
+        Overall, the Archival Administration pathway page is well structured, accessible, and thoughtfully organized for students exploring this career direction. The page uses semantic HTML elements effectively, with a clear header, navigation menu, main content area, and footer that support both readability and usability. The heading hierarchy is logical and consistent, helping users understand how the content is grouped and how each section relates to the overall topic. The WAVE accessibility review showed no errors and only minor alerts, indicating strong compliance with accessibility standards, and the issues identified were related to alt text quality rather than missing information. Although the W3C Validator could not check the page due to server restrictions, the overall structure and accessibility findings suggest that the page is built with modern web standards in mind. In general, the page provides a strong example of clear, accessible, and well organized academic web content.
+    </p>
+</section>
+
+</main>
+
+
+<footer>
+    <p>INF 6420 – Research Report by Bailey Foley</p>
+    <p>
+        GitHub Pages URL:
+        <a href="YOUR_GITHUB_PAGES_URL_HERE">YOUR_GITHUB_PAGES_URL_HERE</a>
+    </p>
+</footer>
+
+</body>
+</html>
+ 
