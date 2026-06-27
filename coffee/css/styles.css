@@ -29,7 +29,7 @@ h1, h2, h3 {
 -------------------------------------------------- */
 header {
   background-color: #0077aa; /* fallback */
-  background-image: url("images/header-bg.jpg");
+  background-image: url("../images/header-bg.jpg");
   background-size: cover;
   background-position: center;
   text-align: center;
