@@ -1,0 +1,135 @@
+/* --------------------------------------------------
+   GOOGLE FONTS
+-------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600&family=Raleway:wght@700&display=swap');
+
+/* --------------------------------------------------
+   GLOBAL
+-------------------------------------------------- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito Sans", sans-serif;
+    background-color: #ffffff;
+    color: #333;
+}
+
+h1, h2, h3 {
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+/* --------------------------------------------------
+   HEADER (HERO SECTION)
+-------------------------------------------------- */
+header {
+  background-color: #0077aa; /* fallback */
+  background-image: url("images/header-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: white;
+  padding: 120px 0;
+}
+
+header h1 {
+    font-size: 64px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 22px;
+    font-weight: 300;
+}
+
+/* --------------------------------------------------
+   NAVIGATION / MENU SECTION
+-------------------------------------------------- */
+nav {
+    background-color: #F0F0F0;
+    padding: 40px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+nav li {
+    text-align: center;
+}
+
+nav li strong {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #3E1305;
+}
+
+/* --------------------------------------------------
+   ABOUT SECTION
+-------------------------------------------------- */
+.about {
+    background-color: #E0E0E0;
+    padding: 80px 0;
+}
+
+.about .container {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.about img {
+    width: 420px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* --------------------------------------------------
+   FOOTER
+-------------------------------------------------- */
+footer {
+    background-color: #3E1305;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+    font-size: 16px;
+}
+
